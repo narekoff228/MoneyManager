@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/idIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="id"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="name category"
+        app:layout_constraintStart_toEndOf="@+id/idIncome"
+        app:layout_constraintTop_toTopOf="@+id/idIncome" />
+
+    <TextView
+        android:id="@+id/dateIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="date"
+        app:layout_constraintStart_toEndOf="@+id/nameCategory"
+        app:layout_constraintTop_toTopOf="@+id/nameCategory" />
+
+    <TextView
+        android:id="@+id/sumIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="sum"
+        app:layout_constraintStart_toEndOf="@+id/dateIncome"
+        app:layout_constraintTop_toTopOf="@+id/dateIncome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

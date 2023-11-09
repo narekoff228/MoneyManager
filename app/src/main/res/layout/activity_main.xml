@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Финансовый менеджер💲"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonShowCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Категории"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonShowIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Доходы"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonShowCategory"
+        app:layout_constraintStart_toStartOf="@+id/buttonShowCategory"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShowCategory" />
+
+    <Button
+        android:id="@+id/buttonShowExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Расходы"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonShowIncome"
+        app:layout_constraintStart_toStartOf="@+id/buttonShowIncome"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShowIncome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
